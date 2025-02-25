@@ -33,14 +33,14 @@ def run():
     try:
         with open('output.csv', 'r', encoding='utf-8') as file:
             reader = csv.DictReader(file)
-            headers = list(reader.fieldnames) + ['file-link']
+            headers = list(reader.fieldnames) + ['Audio File Link']
             
             for row in reader:
                 # Use the Date-Time column directly
                 key = row['Date-Time']
                 # Add link if match found
-                row['file-link'] = audio_links.get(key, '')
-                if row['file-link']:
+                row['Audio File Link'] = audio_links.get(key, '')
+                if row['Audio File Link']:
                     print(f"Match found for {key}")
                 rows_to_write.append(row)
 
