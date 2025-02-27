@@ -14,6 +14,12 @@ Before running the scripts, you need to:
 
 ## Scripts Overview
 
+### runall.py
+Runs all the scripts sequentially, does everything from script1 to script4
+- creates relevant columns and converts to relevant formats
+- ads cover image links to csv
+- connect to google drive and adds audio file links, matching with the original csv
+
 ### script1.py
 
 - Processes input.csv to create output.csv
