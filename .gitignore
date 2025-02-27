@@ -3,6 +3,7 @@ credentials.json
 *.key
 *.pem
 .env
+venv
 
 # Python
 __pycache__/
